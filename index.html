@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Take a Photo</title>
+    <!-- Add some CSS for styling -->
+    <style>
+        #cameraStream {
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid black;
+        }
+        
+        #photo {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid black;
+            display: none; /* Hide initially */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <video id="cameraStream" autoplay></video>
+        <button id="capture">Capture Photo</button>
+        <canvas id="photo" style="display:none;"></canvas>
+    </div>
+    <div>
+        <img id="lastPhoto" src="" alt="Last Photo" style="max-width: 100%; display: none;">
+    </div>
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
